@@ -1,0 +1,74 @@
+body{
+	font-family: 'Poppins', sans-serif;
+	margin:0 auto;
+	width:960px;
+}
+h1,h2{
+    font-weight:bold;
+}
+a:link, a:visited{
+    color:grey;
+    font-weight:bold; 
+}
+a:hover{
+    background-color:darkred;
+    color:white;
+
+}
+.jumbotron{
+    background-color: darkred;
+    color: white;
+}
+h1{
+    margin-left:20px;
+}
+td, th{
+	border: 1px solid black;
+	width:20%;
+	text-align: center;
+	padding: 5px;
+}
+table{
+	border-collapse:collapse;
+}
+.menu{
+    font-size:25px;
+    width:50%;
+}
+.container{
+    margin:auto;
+    width:70%;
+    font-size: 16px;
+}
+.container h2{
+    text-align:center;
+}
+.BigAlPic{
+    float:left;
+    padding: 40px;
+    height:auto;
+    width:auto;
+}
+.delete, .edit{
+    margin:auto;
+    width:90%;
+    font-size:16px;
+}
+.delete h2, .edit h2{
+    text-align:center;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgb(0,0,0,0.4);
+}
+.modal-content{
+    background-color: white;
+}
