@@ -46,7 +46,7 @@ namespace API.Controllers
         // PUT: api/posts/5
         [EnableCors("AnotherPolicy")]
         [HttpPut("{id}")]
-        [Route("posts/{id:int}")]
+        [Route("post/{id:int}")]
         public void Put([FromBody] int id, string text)
         {
             ISaveData saveObject = new SaveData();
@@ -56,7 +56,7 @@ namespace API.Controllers
         // DELETE: api/ApiWithActions/5
         [EnableCors("AnotherPolicy")]
         [HttpDelete("{id}")]
-        [Route("posts/{id:int}")]
+        [Route("post/{id:int}")]
         public void Delete(int id)
         {
             IDeleteData deleteObject = new DeleteData();
