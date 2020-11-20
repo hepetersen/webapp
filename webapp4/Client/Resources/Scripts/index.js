@@ -1,5 +1,5 @@
 function getPosts() {
-    const allPostsApiUrl = "https://localhost:5001/api/posts";
+    const allPostsApiUrl = "https://localhost:5001/api/post";
 
     fetch(allPostsApiUrl).then(function (response) {
         console.log(response); //testing response
@@ -20,7 +20,7 @@ function getPosts() {
 
 
 function makePost() {
-    const makePostApiUrl = "https://localhost:5001/api/posts";
+    const makePostApiUrl = "https://localhost:5001/api/post";
     const postText = document.getElementById("text").value;
     const postDate = new Date();
 
@@ -44,7 +44,7 @@ function makePost() {
 
 
 function deletePost() {
-    const deletePostsApiUrl = "https://localhost:5001/api/posts";
+    const deletePostsApiUrl = "https://localhost:5001/api/post";
 
     fetch(deletePostsApiUrl).then(function (response) {
         console.log(response); //testing response
@@ -66,7 +66,7 @@ function deletePost() {
 }
 
 function deletePostById(id) {
-    const deletePostApiUrl = "https://localhost:5001/api/posts/" + id;
+    const deletePostApiUrl = "https://localhost:5001/api/post/" + id;
     const postId = id;
 
     fetch(deletePostApiUrl, {
@@ -91,7 +91,7 @@ function refreshPage() {
 }
 
 function editPost() {
-    const editPostsApiUrl = "https://localhost:5001/api/posts";
+    const editPostsApiUrl = "https://localhost:5001/api/post";
 
     fetch(editPostsApiUrl).then(function (response) {
         console.log(response); //testing response
@@ -114,4 +114,5 @@ function editPost() {
         console.log(error);
     })
 }
+
 

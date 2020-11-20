@@ -13,25 +13,26 @@ showModal = function(id, text)
 function putPost(id)
 {
     const intId = Number(id);
-    const putPostApiUrl = "https://localhost:5001/api/posts/" + intId;
+    const putPostApiUrl = "https://localhost:5001/api/post/" + intId;
     const postText = document.getElementById("updateText").value;
     
     fetch(putPostApiUrl, {
         method:"PUT",
-        mode: "cors",
+        //mode: "cors",
         headers: {
             "Accept": 'application/json',
             "Content-Type": 'application/json',
         },
         body: JSON.stringify({
-            id: intId,
+            //id: Number(intId),
             text: postText
         })
-    })
-        .then((response) => {
+    }).then((response) => {
+            response.json();
             console.log(response);
-            getPosts();
             //refreshPage();
+            getPosts();
+            closeModal();
         })
 }
 

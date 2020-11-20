@@ -51,13 +51,22 @@
         </div>
     </div>
 
+    <div class="container" display="none">
+        <div class="col-md-10">
+            <br/>
+            <div id="postTable">
+                    
+            </div>
+        </div>
+    </div>
+
     <div id="editModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <form onsubmit="return false;" method="post">
                 <label for="updateText">Post Text:</label>
                 <input type="text" name="updateText" id="updateText" />
-                <input type="submit" value="Submit" id="updateSubmit" />
+                <input type="submit" value="Submit" id="updateSubmit"/>
             </form>
         </div>
     </div>
